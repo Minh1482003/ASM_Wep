@@ -3,8 +3,10 @@ body{
 }
 
 .container  {
-    max-width: 1000px;
+    max-width: 100%; 
+    width: 100%;
     margin: 0px auto;
+    border: 1px solid black;
 }
 
 header{
@@ -12,8 +14,8 @@ header{
 }
 
 header img{
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
 }
 
 nav {
@@ -22,37 +24,47 @@ nav {
     height: 35px;
 }
 article{
-    background-color: cornsilk;
+    background-color: white;
     float: left;
-    width: 75%;
+    /* width: 75%; */
     min-height: 250px;
+    font-size: 10px;
+    /* border: 1px solid black; */
 }
 aside{
-    background-color: rgb(183, 188, 196);
     float: right;
     width: 25%;
     min-height: 250px;
+    margin-top: 10px;
 }
 footer{
     clear: both;
 }
 
 footer img {
-    height: 130px;
+    height: 100%;
     width: 100%;
 }
 
+.ul-01 {
+  border: 1px solid black;
+  margin-top: 0px;
+}
 
 .ul-01 li {
-    border: 1px solid black;
-    border-radius: 10px;
+    border-bottom: 1px solid black;
     margin: 5px;
-    padding: 6px;
+    margin-left: 0px;
+    padding: 5px;
+    margin-right: 20px;
+    color:   rgb(22, 164, 212);
+    font-size: 10px;
 }
 
 #ul-02 li {
     display: inline-block;
     margin-left: 70px;
+    /* border: 1px solid red; */
 }
 
 #ul-02 li a {
@@ -65,3 +77,196 @@ footer img {
     border: 1px;
     margin-top: 7px;
 }
+
+#li-01 {
+    position: relative; 
+  }
+  
+  #li-01:hover ul {
+    display: block;
+  }
+  
+  #li-01 ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0; 
+    z-index: 1;
+  }
+  
+  #li-01 ul li {
+    white-space: nowrap; 
+    padding: 5px 10px;
+    margin-left: 0px;
+    color:  white;
+    background-color:  rgb(101, 211, 150);
+    width: 75px;
+  }
+
+  #li-01 ul li a {
+    background-color: rgb(101, 211, 150);
+    margin: 0px;
+  }
+
+  #li-01 ul li:hover a {
+    background-color: rgb(91, 180, 94);
+    /* border: 1px solid red; */
+  }
+
+  article .k-a1 {
+    display: inline-block;
+    border: 1px solid rgb(143, 173, 138);
+    border-radius: 5px;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .k-a1 {
+    position: relative;
+    width: 400px;
+    height: 260px;
+  }
+
+  .vb-a1 {
+    font-weight: bold; 
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    z-index: 10;
+    margin-left: 80px;
+  }
+
+
+  .k-a01 div img {
+    width: 200px;
+    height: 120px;
+  }
+
+  .k-a01 {
+    float: right;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-top: 11px;
+  }
+
+  .vb-a2 {
+    font-size: 9px;
+    text-align: center;
+    color: rgb(166, 226, 239);
+    position: absolute;
+    z-index: 10;
+    top: 520px;
+    margin-left: 10px;
+  }
+
+  .k-a01 div img {
+    border: 1px solid black;
+    margin: 2px;
+  } 
+
+  .content-01 {
+    border-top: 1.5px solid  rgb(22, 164, 212);
+    overflow: auto;
+  }
+
+  .k-b1 {
+    border: 1px solid black;
+    width: 350px;
+  }
+
+  .k-b1 p {
+    margin-left: 10px;
+  }
+  
+  .vb-b001 {
+    background-color: rgb(22, 164, 212);
+    color: aliceblue;
+    font-size: 12px;
+    border-top: 1px solid black;
+    width: 200px;
+    margin-bottom: 0px;
+    padding: 2px;
+    margin-top: 1px;
+  }
+
+  .kb-2 div img {
+    width: 90px;
+    height: 80px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .kb-2 div {
+    border: 1px solid rgb(235, 205, 205);
+    width:400px;
+    overflow: auto;
+    margin-bottom: 10px;
+  }
+
+  .kb-2 div p {
+    float: none;
+    clear: right;
+  }
+
+  .k-b1 {
+    float: left; /* Đẩy k-b1 về bên trái */
+    margin-right: 20px; /* Khoảng cách giữa k-b1 và kb-2 */
+  }
+  
+  .kb-2 {
+    float: left; /* Đẩy kb-2 về bên phải của k-b1 */
+  }
+  
+  #a001{
+    margin-top: 57px;
+  }
+
+  .vb-c01 {
+    font-size: 20px;
+    /* border: 1px solid black; */
+    width: 900px;
+  }
+
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }

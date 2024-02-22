@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img id="img0-1" src="./imgs/img-01.jpg" alt="Hinh anh" width="1000px" height="300px">
+        </header>
+        <nav>
+            <ul id="ul-02">
+                <li><a href="./index.html"><i class="fas fa-home"> </i>Trang chủ</a></li>
+                <li id="li-01"><a href="#">Gới thiệu</a>
+                    <ul>
+                        <li><a href="#">Thư viện</a></li>
+                        <li><a href="#">Hoạt động</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+        </nav>
+
+        <article style="margin-left: 80px;">
+           <p style="font-size: 30px;">Liên hệ</p>
+           <img width="150px" height="150px" src="./imgs/liehe.png">
+           <p><i class="fas fa-map-marker-alt"></i><b> Địa chỉ:</b>57 Phạm Cự Lượng, An Hải Bắc, Q. Sơn Trà,TP. Đà Nẵng</p>
+           <p><i class="fas fa-phone-alt"></i><b> Điện thoại</b>0236 3831 369</p>
+           <div class="contact-form">
+            <h2>Liên Hệ</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Tin Nhắn:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit">Gửi</button>
+            </form>
+          </div>
+        </article>
+        <footer>
+            <img src="./imgs/footer.png" alt="Hinh anh" width="1000px" height="100px">
+        </footer>
+    </div>
+</body>
+</html>
